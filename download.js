@@ -33,7 +33,7 @@ const { execSync } = require('child_process');
     const [inputElement] = await page.$x('//*[@id="url1"]');
     if (inputElement) {
       console.log('输入框元素找到，输入内容...');
-      await inputElement.type('github.com'); // 替换为你想输入的内容
+      await inputElement.type('github.com'); // 替换为你获取的域名，不带http://
     } else {
       throw new Error('输入框元素未找到');
     }

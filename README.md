@@ -8,3 +8,9 @@
 ### 文件修改说明
 - **download.js** 修改36行“await inputElement.type('github.com'); // 替换为你获取的域名，不带http://” /n
 - **.github/workflows/aliyun-boce-export.yml** 修改38行“git add downloads/**github.com**-ping-result.xlsx”
+### 其他文件及目录说明
+- **package.json** node.js的依赖什么的
+- **downloads** 存放导出的表格，也就是含有IP的数据
+
+## 其他
+因为个人能力有限，故写的些许潦草还请见谅。

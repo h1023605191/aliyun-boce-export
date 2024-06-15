@@ -1,0 +1,12 @@
+{
+  "name": "github-actions-download",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node download.js"
+  },
+  "dependencies": {
+    "puppeteer": "^10.0.0"
+  }
+}

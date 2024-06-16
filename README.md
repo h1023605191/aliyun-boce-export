@@ -8,7 +8,7 @@
 ### 文件修改说明
 - **download.js** 修改36行“await inputElement.type('github.com'); // 替换为你获取的域名，不带http://”
 - **download.js** 修改78行“const finalPath = path.join(downloadPath, '**github.com**-ping-result.xlsx');”
-- **.github/workflows/aliyun-boce-export.yml**修改32、33、38行的“downloads/**github.com**-ping-result.xlsx” 跟随你的域名
+- **.github/workflows/aliyun-boce-export.yml**修改42行的“downloads/**github.com**-ping-result.xlsx” 跟随你的域名
 ### 其他文件及目录说明
 - **package.json** node.js的依赖什么的
 - **downloads** 存放导出的表格，也就是含有IP的数据

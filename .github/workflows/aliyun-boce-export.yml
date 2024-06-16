@@ -27,11 +27,6 @@ jobs:
       with:
         node-version: '14'
         
-    - name: Remove existing file
-      run: |
-        if [ -f downloads/github.com-ping-result.xlsx ]; then
-          rm downloads/github.com-ping-result.xlsx
-        fi
         
     - name: Install dependencies
       run: npm install puppeteer

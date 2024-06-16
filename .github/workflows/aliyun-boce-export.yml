@@ -2,9 +2,8 @@ name: aliyun-boce-export
 
 on:
   schedule:
-    # Runs at 00:00 and 12:00 UTC every day
-    - cron: '0 0 * * *'
-    - cron: '0 12 * * *'
+    # 每两个小时运行一次
+    - cron: '0 */2 * * *'
   push:
     branches:
       - main
@@ -42,6 +41,6 @@ jobs:
         #如果需要则需要修改这个github.com-ping-result.xlsx，前面的就是自己填入的域名
         git add downloads/github.com-ping-result.xlsx
         git commit -m "Add downloaded file"
-        git push
+        git push -f
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
